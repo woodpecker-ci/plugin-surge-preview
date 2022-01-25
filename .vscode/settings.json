@@ -1,5 +1,0 @@
-{
-  "yaml.schemas": {
-    "https://raw.githubusercontent.com/woodpecker-ci/woodpecker/master/pipeline/schema/schema.json": "file:///home/anton/Projects/woodpecker/plugin-surge-preview/.woodpecker/build.yml"
-  }
-}
