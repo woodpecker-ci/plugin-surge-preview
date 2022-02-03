@@ -19,10 +19,11 @@ pipeline:
   preview:
     image: woodpeckerci/plugin-surge-preview
     settings:
-      path: dist/
-      surge_token: xxx
-      scm_token: xxx # access token for your SCM
-      scm_type: github # or gitea, gitlab, ...
+      path: dist/ # path to directory to publish files from
+      surge_token: xxx # install surge cli and run `surge token`: https://surge.sh/help/getting-started-with-surge
+      forge_type: github # or gitea, gitlab, ...
+      forge_url: https://github.com # or https://codeberg.org, https://gitlab.com, ...
+      forge_repo_token: xxx # access token for your forge
     when:
       event: pull_request
 ```

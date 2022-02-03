@@ -48,6 +48,21 @@ func main() {
 			Usage:   "id of the current pull-request",
 			EnvVars: []string{"CI_COMMIT_PULL_REQUEST"},
 		},
+		&cli.StringFlag{
+			Name:    "forge-type",
+			Usage:   "type of the forge",
+			EnvVars: []string{"CI_FORGE_TYPE", "PLUGIN_FORGE_TYPE"},
+		},
+		&cli.StringFlag{
+			Name:    "forge-url",
+			Usage:   "base url of the forge",
+			EnvVars: []string{"CI_FORGE_URL", "PLUGIN_FORGE_URL"},
+		},
+		&cli.StringFlag{
+			Name:    "forge-repo-token",
+			Usage:   "type of the forge",
+			EnvVars: []string{"CI_FORGE_REPO_TOKEN", "PUGIN_FORGE_REPO_TOKEN"},
+		},
 	}
 
 	if err := app.Run(os.Args); err != nil {
@@ -58,13 +73,16 @@ func main() {
 
 func run(c *cli.Context) error {
 	plugin := Plugin{
-		SurgeToken:    c.String("surge-token"),
-		Path:          c.String("path"),
-		RepoOwner:     c.String("repo-owner"),
-		RepoName:      c.String("repo-name"),
-		PipelineEvent: c.String("pipeline-event"),
-		PipelineLink:  c.String("pipeline-link"),
-		PullRequestId: c.Int("pull-request-id"),
+		SurgeToken:     c.String("surge-token"),
+		Path:           c.String("path"),
+		RepoOwner:      c.String("repo-owner"),
+		RepoName:       c.String("repo-name"),
+		PipelineEvent:  c.String("pipeline-event"),
+		PipelineLink:   c.String("pipeline-link"),
+		PullRequestId:  c.Int("pull-request-id"),
+		ForgeType:      c.String("forge-type"),
+		ForgeUrl:       c.String("forge-url"),
+		ForgeRepoToken: c.String("forge-repo-token"),
 	}
 
 	return plugin.Exec()

@@ -9,14 +9,17 @@ import (
 )
 
 type Plugin struct {
-	SurgeToken    string
-	Path          string
-	RepoOwner     string
-	RepoName      string
-	PipelineEvent string
-	PipelineLink  string
-	PullRequestId int
-	comment       *comment
+	SurgeToken     string
+	Path           string
+	RepoOwner      string
+	RepoName       string
+	PipelineEvent  string
+	PipelineLink   string
+	PullRequestId  int
+	ForgeType      string
+	ForgeUrl       string
+	ForgeRepoToken string
+	comment        *comment
 }
 
 func (p *Plugin) Exec() error {
@@ -35,8 +38,7 @@ func (p *Plugin) Exec() error {
 	}
 
 	p.comment = &comment{}
-	// TODO: CI_REPO_SCM, CI_REPO_REMOTE, CI_NETRC_PASSWORD
-	p.comment.Load("github", "serverUrl", "oauth")
+	p.comment.Load(p.ForgeType, p.ForgeUrl, p.ForgeRepoToken)
 
 	switch p.PipelineEvent {
 	case "pull_request":
