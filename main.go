@@ -84,5 +84,5 @@ func run(c *cli.Context) error {
 		ForgeRepoToken: c.String("forge-repo-token"),
 	}
 
-	return plugin.Exec()
+	return plugin.Exec(c.Context)
 }

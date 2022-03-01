@@ -1,11 +1,15 @@
 package main
 
 import (
+	"bytes"
 	"context"
 	"errors"
 	"fmt"
+	"io"
+	"os"
 	"os/exec"
 	"strings"
+	"sync"
 )
 
 type Plugin struct {
@@ -21,7 +25,7 @@ type Plugin struct {
 	comment        *comment
 }
 
-func (p *Plugin) Exec() error {
+func (p *Plugin) Exec(ctx context.Context) error {
 	fmt.Println("Surge.sh preview plugin")
 
 	if p.RepoName == "" || p.RepoOwner == "" || p.PipelineEvent == "" {
@@ -37,45 +41,77 @@ func (p *Plugin) Exec() error {
 	}
 
 	p.comment = &comment{}
-	p.comment.Load(p.ForgeType, p.ForgeUrl, p.ForgeRepoToken)
+	err := p.comment.Load(p.ForgeType, p.ForgeUrl, p.ForgeRepoToken)
+	if err != nil {
+		return err
+	}
 
 	switch p.PipelineEvent {
 	case "pull_request":
-		return p.deploy()
+		return p.deploy(ctx)
 	case "pull_close":
-		return p.teardown()
+		return p.teardown(ctx)
 	default:
 		return errors.New("unsupported pipeline event, please only run on pull_request or pull_close")
 	}
 }
 
-func (p *Plugin) deploy() error {
+func (p *Plugin) deploy(ctx context.Context) error {
 	url := p.getPreviewUrl()
 	repo := p.RepoOwner + "/" + p.RepoName
-	fmt.Printf("Deploying preview to %s\n", url)
-	p.comment.UpdateOrCreateComment(context.Background(), repo, p.PullRequestId, "Deploying preview to: "+url)
+
+	comment, err := p.comment.Find(ctx, repo, p.PullRequestId)
+	if err != nil && err.Error() != "Comment not found" {
+		return err
+	}
+
+	commentText := fmt.Sprintf("Deploying preview to https://%s", url)
+	fmt.Println(commentText)
+	comment, err = p.comment.UpdateOrCreateComment(ctx, repo, p.PullRequestId, comment, commentText)
+	if err != nil {
+		return err
+	}
 
 	if err := p.runSurgeCommand(false); err != nil {
 		return err
 	}
 
-	fmt.Println("Deployment of preview was successful")
-	p.comment.UpdateOrCreateComment(context.Background(), repo, p.PullRequestId, "Deployment of preview was successful: "+url)
+	commentText = fmt.Sprintf("Deployment of preview was successful: https://%s", url)
+	fmt.Println(commentText)
+	_, err = p.comment.UpdateOrCreateComment(ctx, repo, p.PullRequestId, comment, commentText)
+	if err != nil {
+		return err
+	}
 
 	return nil
 }
 
-func (p *Plugin) teardown() error {
+func (p *Plugin) teardown(ctx context.Context) error {
 	url := p.getPreviewUrl()
 	repo := p.RepoOwner + "/" + p.RepoName
-	fmt.Printf("Teading down %s", url)
+
+	comment, err := p.comment.Find(ctx, repo, p.PullRequestId)
+	if err != nil && err.Error() != "Comment not found" {
+		return err
+	}
+
+	commentText := fmt.Sprintf("Teading down https://%s\n", url)
+	fmt.Println(commentText)
+	comment, err = p.comment.UpdateOrCreateComment(ctx, repo, p.PullRequestId, comment, commentText)
+	if err != nil {
+		return err
+	}
 
 	if err := p.runSurgeCommand(true); err != nil {
 		return err
 	}
 
-	fmt.Println("Preview torn down")
-	p.comment.UpdateOrCreateComment(context.Background(), repo, p.PullRequestId, "Deployment of preview was torn down")
+	commentText = "Deployment of preview was torn down"
+	fmt.Println(commentText)
+	_, err = p.comment.UpdateOrCreateComment(ctx, repo, p.PullRequestId, comment, commentText)
+	if err != nil {
+		return err
+	}
 
 	return nil
 }
@@ -85,21 +121,35 @@ func (p *Plugin) getPreviewUrl() string {
 }
 
 func (p *Plugin) runSurgeCommand(teardown bool) error {
-	cmdArg := "./" + p.Path
+	var output bytes.Buffer
+	var waitGroup sync.WaitGroup
+
+	cmdArg := p.Path
 
 	if teardown {
 		cmdArg = "teardown"
 	}
 
 	cmd := exec.Command("surge", cmdArg, p.getPreviewUrl(), `--token`, p.SurgeToken)
-	stdout, err := cmd.Output()
+	// fmt.Println("# ", strings.Join(cmd.Args, " "))
+	stdout, err := cmd.StdoutPipe()
 	if err != nil {
 		return err
 	}
+	writer := io.MultiWriter(os.Stdout, &output)
 
-	fmt.Println(string(stdout))
+	waitGroup.Add(1)
+	go func() {
+		defer waitGroup.Done()
+		io.Copy(writer, stdout)
+	}()
 
-	if !strings.Contains(string(stdout), "Success!") {
+	if err := cmd.Run(); err != nil {
+		return err
+	}
+	waitGroup.Wait()
+
+	if !strings.Contains(output.String(), "Success!") {
 		return errors.New("Failed to run surge")
 	}
 
