@@ -8,7 +8,7 @@ import (
 	"github.com/jenkins-x/go-scm/scm/factory"
 )
 
-const commentKey = "<!--surge.sh-->"
+const commentKey = "<!--woodpeckerci-plugin-surge-preview-->"
 
 type comment struct {
 	client *scm.Client
