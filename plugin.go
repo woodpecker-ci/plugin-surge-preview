@@ -14,7 +14,6 @@ type Plugin struct {
 	RepoOwner      string
 	RepoName       string
 	PipelineEvent  string
-	PipelineLink   string
 	PullRequestId  int
 	ForgeType      string
 	ForgeUrl       string
@@ -25,7 +24,7 @@ type Plugin struct {
 func (p *Plugin) Exec() error {
 	fmt.Println("Surge.sh preview plugin")
 
-	if p.RepoName == "" || p.RepoOwner == "" || p.PipelineEvent == "" || p.PipelineLink == "" {
+	if p.RepoName == "" || p.RepoOwner == "" || p.PipelineEvent == "" {
 		return errors.New("Missing required parameters. Are you running this plugin from within a pipeline?")
 	}
 

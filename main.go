@@ -78,7 +78,6 @@ func run(c *cli.Context) error {
 		RepoOwner:      c.String("repo-owner"),
 		RepoName:       c.String("repo-name"),
 		PipelineEvent:  c.String("pipeline-event"),
-		PipelineLink:   c.String("pipeline-link"),
 		PullRequestId:  c.Int("pull-request-id"),
 		ForgeType:      c.String("forge-type"),
 		ForgeUrl:       c.String("forge-url"),
