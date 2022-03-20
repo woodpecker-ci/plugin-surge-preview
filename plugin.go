@@ -131,7 +131,7 @@ func (p *Plugin) runSurgeCommand(teardown bool) error {
 	}
 
 	cmd := exec.Command("surge", cmdArg, p.getPreviewUrl(), `--token`, p.SurgeToken)
-	// fmt.Println("# ", strings.Join(cmd.Args, " "))
+	fmt.Println("#", strings.Join(append(cmd.Args, p.getPreviewUrl(), "--token ****"), " "))
 	stdout, err := cmd.StdoutPipe()
 	if err != nil {
 		return err
