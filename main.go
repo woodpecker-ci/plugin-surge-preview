@@ -61,7 +61,7 @@ func main() {
 		&cli.StringFlag{
 			Name:    "forge-repo-token",
 			Usage:   "type of the forge",
-			EnvVars: []string{"CI_FORGE_REPO_TOKEN", "PUGIN_FORGE_REPO_TOKEN"},
+			EnvVars: []string{"CI_FORGE_REPO_TOKEN", "PLUGIN_FORGE_REPO_TOKEN"},
 		},
 	}
 
