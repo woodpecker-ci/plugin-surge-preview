@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"errors"
+	"fmt"
 	"strings"
 
 	"github.com/jenkins-x/go-scm/scm"
@@ -60,7 +61,7 @@ func (c *comment) Find(ctx context.Context, repo string, prID int) (*scm.Comment
 
 func (c *comment) UpdateOrCreateComment(ctx context.Context, repo string, prID int, comment *scm.Comment, body string) (*scm.Comment, error) {
 	commentInput := &scm.CommentInput{
-		Body: body,
+		Body: fmt.Sprintf("%s\n%s", commentKey, body),
 	}
 
 	if comment == nil {
