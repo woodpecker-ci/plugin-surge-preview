@@ -43,7 +43,7 @@ docker run --rm -it \
   -e CI_REPO_OWNER=REPO_OWNER \
   -e CI_REPO_NAME=REPO_NAME \
   -e CI_COMMIT_PULL_REQUEST=99 \
-  -v $(pwd):/drone/src \
+  -v $(pwd):/woodpecker/src \
   -w /woodpecker/src \
   --entrypoint sh \
   woodpeckerci/plugin-surge-preview:next
