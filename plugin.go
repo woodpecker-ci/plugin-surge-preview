@@ -118,7 +118,7 @@ func (p *Plugin) teardown(ctx context.Context) error {
 }
 
 func (p *Plugin) getPreviewUrl() string {
-	pattern := regexp.MustCompile(`(?i)[^a-z0-9\-]`)
+	pattern := regexp.MustCompile(`[^a-zA-Z0-9\-]`)
 	owner := pattern.ReplaceAllString(p.RepoOwner, "-")
 	repo := pattern.ReplaceAllString(p.RepoName, "-")
 	return fmt.Sprintf("%s-%s-pr-%d.surge.sh", owner, repo, p.PullRequestId)
