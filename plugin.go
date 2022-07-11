@@ -8,6 +8,7 @@ import (
 	"io"
 	"os"
 	"os/exec"
+	"regexp"
 	"strings"
 	"sync"
 )
@@ -117,7 +118,10 @@ func (p *Plugin) teardown(ctx context.Context) error {
 }
 
 func (p *Plugin) getPreviewUrl() string {
-	return fmt.Sprintf("%s-%s-pr-%d.surge.sh", p.RepoOwner, p.RepoName, p.PullRequestId)
+	pattern := regexp.MustCompile(`[^a-zA-Z0-9\-]`)
+	owner := pattern.ReplaceAllString(p.RepoOwner, "-")
+	repo := pattern.ReplaceAllString(p.RepoName, "-")
+	return fmt.Sprintf("%s-%s-pr-%d.surge.sh", owner, repo, p.PullRequestId)
 }
 
 func (p *Plugin) runSurgeCommand(teardown bool) error {
