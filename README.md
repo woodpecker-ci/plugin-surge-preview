@@ -1,5 +1,8 @@
 # plugin-surge-preview
 
+[![Build status](https://ci.woodpecker-ci.org/api/badges/woodpecker-ci/plugin-surge-preview/status.svg)](https://ci.woodpecker-ci.org/woodpecker-ci/plugin-surge-preview)
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/woodpeckerci/plugin-surge-preview?label=DockerHub%20latest%20version&sort=semver)](https://hub.docker.com/r/woodpeckerci/plugin-surge-preview/tags)
+
 Woodpecker plugin to deploy static pages for reviewing to [surge.sh](https://surge.sh/).
 
 ## Build
