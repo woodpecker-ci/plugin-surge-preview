@@ -153,7 +153,7 @@ func (p *Plugin) runSurgeCommand(teardown bool) error {
 	}
 	waitGroup.Wait()
 
-	if !strings.Contains(output.String(), "Success!") {
+	if !strings.Contains(output.String(), "Success") {
 		return errors.New("Failed to run surge")
 	}
 
