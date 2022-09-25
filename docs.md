@@ -4,7 +4,8 @@ authors: Woodpecker Authors
 icon: https://woodpecker-ci.org/img/logo.svg
 description: Plugin to create static pages deployments as preview environments on pull-requests.
 tags: [publish, cdn, preview]
-image: woodpeckerci/plugin-surge-preview
+containerImage: woodpeckerci/plugin-surge-preview
+containerImageUrl: https://hub.docker.com/r/woodpeckerci/plugin-surge-preview
 ---
 
 The surge-preview plugin uploads a files of a directory to the CDN of [surge.sh](https://surge.sh/) it automatically generates an url and posts the status of the deployment with an url as a comment to the pull-request. After closing a pull-request it automatically destroys the preview environment again.
