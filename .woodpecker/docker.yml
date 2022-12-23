@@ -15,7 +15,7 @@ pipeline:
     settings:
       dockerfile: Dockerfile
       repo: woodpeckerci/plugin-surge-preview
-      platforms: linux/arm/v7,linux/arm64/v8,linux/amd64,linux/ppc64le
+      platforms: linux/arm/v7,linux/arm64,linux/amd64,linux/ppc64le
       tag: next
     secrets: [docker_username, docker_password]
     when:
