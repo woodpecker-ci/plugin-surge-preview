@@ -36,17 +36,17 @@ func main() {
 		&cli.StringFlag{
 			Name:    "repo-owner",
 			Usage:   "owner of the current repo",
-			EnvVars: []string{"DRONE_REPO_OWNER", "CI_REPO_OWNER"},
+			EnvVars: []string{"CI_REPO_OWNER", "DRONE_REPO_OWNER"},
 		},
 		&cli.StringFlag{
 			Name:    "repo-name",
 			Usage:   "name of the current repo",
-			EnvVars: []string{"DRONE_REPO_NAME", "CI_REPO_NAME"},
+			EnvVars: []string{"CI_REPO_NAME", "DRONE_REPO_NAME"},
 		},
 		&cli.StringFlag{
 			Name:    "pull-request-id",
 			Usage:   "id of the current pull-request",
-			EnvVars: []string{"DRONE_PULL_REQUEST", "CI_COMMIT_PULL_REQUEST"},
+			EnvVars: []string{"CI_COMMIT_PULL_REQUEST", "DRONE_PULL_REQUEST"},
 		},
 		&cli.StringFlag{
 			Name:    "forge-type",
