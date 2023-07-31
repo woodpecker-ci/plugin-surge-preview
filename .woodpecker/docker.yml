@@ -1,4 +1,4 @@
-pipeline:
+steps:
   dryrun:
     image: woodpeckerci/plugin-docker-buildx
     settings:
@@ -19,7 +19,7 @@ pipeline:
       tag: next
     secrets: [docker_username, docker_password]
     when:
-      branch: main
+      branch: ${CI_REPO_DEFAULT_BRANCH}
       event: push
 
   publish-tag:
