@@ -32,7 +32,7 @@ func (c *comment) Find(ctx context.Context, repo string, prID int) (*scm.Comment
 		Size: 1,
 	}
 	for {
-		comments, resp, err := c.client.PullRequests.ListComments(ctx, repo, prID, listOptions)
+		comments, resp, err := c.client.PullRequests.ListComments(ctx, repo, prID, &listOptions)
 		if err != nil {
 			return nil, err
 		}
