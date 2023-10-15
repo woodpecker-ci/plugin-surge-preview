@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.2.2](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.2.2) - 2023-10-15
+
+### ❤️ Thanks to all contributors! ❤️
+
+@pat-s
+
+### Misc
+
+- Fix SCM module error [[#22](https://github.com/woodpecker-ci/plugin-surge-preview/pull/22)]
+
 ## [1.2.1](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.2.1) - 2023-10-15
 
 ### ❤️ Thanks to all contributors! ❤️
