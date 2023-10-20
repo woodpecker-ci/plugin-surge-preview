@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.2.3](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.2.3) - 2023-10-20
+
+### ❤️ Thanks to all contributors! ❤️
+
+@renovate[bot]
+
+### Misc
+
+- chore(deps): update node.js to v21 [[#24](https://github.com/woodpecker-ci/plugin-surge-preview/pull/24)]
+
 ## [1.2.2](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.2.2) - 2023-10-15
 
 ### ❤️ Thanks to all contributors! ❤️
