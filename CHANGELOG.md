@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.2.3](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.2.3) - 2023-10-20
+## [1.2.3](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.2.3) - 2023-10-25
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,6 +8,7 @@
 
 ### Misc
 
+- chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v2.2.0 [[#26](https://github.com/woodpecker-ci/plugin-surge-preview/pull/26)]
 - chore(deps): update node.js to v21 [[#24](https://github.com/woodpecker-ci/plugin-surge-preview/pull/24)]
 
 ## [1.2.2](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.2.2) - 2023-10-15
