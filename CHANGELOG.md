@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.2.3](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.2.3) - 2023-10-25
+## [1.2.3](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.2.3) - 2023-10-27
 
 ### ❤️ Thanks to all contributors! ❤️
 
