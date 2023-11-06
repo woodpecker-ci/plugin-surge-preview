@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.2.3](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.2.3) - 2023-11-04
+## [1.2.3](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.2.3) - 2023-11-06
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,6 +8,7 @@
 
 ### Misc
 
+- fix(deps): update module github.com/jenkins-x/go-scm to v1.14.19 [[#30](https://github.com/woodpecker-ci/plugin-surge-preview/pull/30)]
 - chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v0.7.0 [[#31](https://github.com/woodpecker-ci/plugin-surge-preview/pull/31)]
 - fix(deps): update module github.com/jenkins-x/go-scm to v1.14.15 [[#29](https://github.com/woodpecker-ci/plugin-surge-preview/pull/29)]
 - chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v2.2.0 [[#26](https://github.com/woodpecker-ci/plugin-surge-preview/pull/26)]
