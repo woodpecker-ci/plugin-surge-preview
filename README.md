@@ -61,4 +61,4 @@ To [tear down a project on surge.sh](https://surge.sh/help/tearing-down-a-projec
 
 ## Credits
 
-- https://github.com/afc163/surge-preview
+- <https://github.com/afc163/surge-preview>
