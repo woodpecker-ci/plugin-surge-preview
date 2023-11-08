@@ -3,7 +3,7 @@ module github.com/woodpecker-ci/plugin-surge-preview
 go 1.21
 
 require (
-	github.com/jenkins-x/go-scm v1.14.19
+	github.com/jenkins-x/go-scm v1.14.20
 	github.com/urfave/cli/v2 v2.25.7
 )
 
