@@ -4,7 +4,7 @@ go 1.21
 
 require (
 	github.com/jenkins-x/go-scm v1.14.21
-	github.com/urfave/cli/v2 v2.25.7
+	github.com/urfave/cli/v2 v2.26.0
 )
 
 require (
