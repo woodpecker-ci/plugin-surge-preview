@@ -1,13 +1,15 @@
 # Changelog
 
-## [1.2.3](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.2.3) - 2023-11-26
+## [1.2.3](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.2.3) - 2023-12-04
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@renovate[bot]
+@renovate[bot], @pat-s
 
 ### Misc
 
+- fix(deps): update module github.com/urfave/cli/v2 to v2.26.0 [[#39](https://github.com/woodpecker-ci/plugin-surge-preview/pull/39)]
+- precommit and linters [[#32](https://github.com/woodpecker-ci/plugin-surge-preview/pull/32)]
 - chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v1.0.3 [[#38](https://github.com/woodpecker-ci/plugin-surge-preview/pull/38)]
 - chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v2.2.1 [[#37](https://github.com/woodpecker-ci/plugin-surge-preview/pull/37)]
 - fix(deps): update module github.com/jenkins-x/go-scm to v1.14.21 [[#36](https://github.com/woodpecker-ci/plugin-surge-preview/pull/36)]
