@@ -3,7 +3,7 @@ module github.com/woodpecker-ci/plugin-surge-preview
 go 1.21
 
 require (
-	github.com/jenkins-x/go-scm v1.14.21
+	github.com/jenkins-x/go-scm v1.14.24
 	github.com/urfave/cli/v2 v2.26.0
 )
 
@@ -24,11 +24,11 @@ require (
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/stretchr/testify v1.8.4 // indirect
 	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
-	golang.org/x/net v0.18.0 // indirect
-	golang.org/x/oauth2 v0.14.0 // indirect
-	golang.org/x/sys v0.14.0 // indirect
+	golang.org/x/net v0.19.0 // indirect
+	golang.org/x/oauth2 v0.15.0 // indirect
+	golang.org/x/sys v0.15.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/apimachinery v0.28.3 // indirect
+	k8s.io/apimachinery v0.29.0 // indirect
 )
