@@ -96,7 +96,7 @@ func (p *Plugin) teardown(ctx context.Context) error {
 		return err
 	}
 
-	commentText := fmt.Sprintf("Teading down https://%s\n", url)
+	commentText := fmt.Sprintf("Tearing down https://%s\n", url)
 	fmt.Println(commentText)
 	comment, err = p.comment.UpdateOrCreateComment(ctx, repo, p.PullRequestID, comment, commentText)
 	if err != nil {
@@ -145,7 +145,7 @@ func (p *Plugin) runSurgeCommand(teardown bool) error {
 	waitGroup.Add(1)
 	go func() {
 		defer waitGroup.Done()
-		io.Copy(writer, stdout)
+		_, _ = io.Copy(writer, stdout)
 	}()
 
 	if err := cmd.Run(); err != nil {
