@@ -30,7 +30,9 @@ pipeline:
       forge_repo_token:
         from_secret: FORGE_TOKEN # access token for your forge
     when:
-      event: pull_request
+      event:
+        - pull_request
+        - pull_request_closed
 ```
 
 ## Running from the CLI
@@ -42,7 +44,7 @@ docker run --rm -it \
   -e PLUGIN_FORGE_TYPE="gitea" \
   -e PLUGIN_FORGE_URL="https://codeberg.org" \
   -e PLUGIN_FORGE_REPO_TOKEN="FORGE_TOKEN" \
-  -e CI_BUILD_EVENT=pull_request \
+  -e CI_PIPELINE_EVENT=pull_request \
   -e CI_REPO_OWNER=REPO_OWNER \
   -e CI_REPO_NAME=REPO_NAME \
   -e CI_COMMIT_PULL_REQUEST=99 \
@@ -57,7 +59,7 @@ plugin-surge-preview
 surge --version
 ```
 
-To [tear down a project on surge.sh](https://surge.sh/help/tearing-down-a-project), run the CLI with the environment variable `CI_BUILD_EVENT=pull_close`.
+To [tear down a project on surge.sh](https://surge.sh/help/tearing-down-a-project), run the CLI with the environment variable `CI_PIPELINE_EVENT=pull_request_closed`.
 
 ## Credits
 
