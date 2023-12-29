@@ -19,9 +19,9 @@ type Plugin struct {
 	RepoOwner      string
 	RepoName       string
 	PipelineEvent  string
-	PullRequestId  int
+	PullRequestID  int
 	ForgeType      string
-	ForgeUrl       string
+	ForgeURL       string
 	ForgeRepoToken string
 	comment        *comment
 }
@@ -42,7 +42,7 @@ func (p *Plugin) Exec(ctx context.Context) error {
 	}
 
 	p.comment = &comment{}
-	err := p.comment.Load(p.ForgeType, p.ForgeUrl, p.ForgeRepoToken)
+	err := p.comment.Load(p.ForgeType, p.ForgeURL, p.ForgeRepoToken)
 	if err != nil {
 		return err
 	}
@@ -50,7 +50,7 @@ func (p *Plugin) Exec(ctx context.Context) error {
 	switch p.PipelineEvent {
 	case "pull_request":
 		return p.deploy(ctx)
-	case "pull_close":
+	case "pull_request_closed":
 		return p.teardown(ctx)
 	default:
 		return errors.New("unsupported pipeline event, please only run on pull_request or pull_close")
@@ -58,17 +58,17 @@ func (p *Plugin) Exec(ctx context.Context) error {
 }
 
 func (p *Plugin) deploy(ctx context.Context) error {
-	url := p.getPreviewUrl()
+	url := p.getPreviewURL()
 	repo := p.RepoOwner + "/" + p.RepoName
 
-	comment, err := p.comment.Find(ctx, repo, p.PullRequestId)
+	comment, err := p.comment.Find(ctx, repo, p.PullRequestID)
 	if err != nil && err.Error() != "Comment not found" {
 		return err
 	}
 
 	commentText := fmt.Sprintf("Deploying preview to https://%s", url)
 	fmt.Println(commentText)
-	comment, err = p.comment.UpdateOrCreateComment(ctx, repo, p.PullRequestId, comment, commentText)
+	comment, err = p.comment.UpdateOrCreateComment(ctx, repo, p.PullRequestID, comment, commentText)
 	if err != nil {
 		return err
 	}
@@ -79,7 +79,7 @@ func (p *Plugin) deploy(ctx context.Context) error {
 
 	commentText = fmt.Sprintf("Deployment of preview was successful: https://%s", url)
 	fmt.Println(commentText)
-	_, err = p.comment.UpdateOrCreateComment(ctx, repo, p.PullRequestId, comment, commentText)
+	_, err = p.comment.UpdateOrCreateComment(ctx, repo, p.PullRequestID, comment, commentText)
 	if err != nil {
 		return err
 	}
@@ -88,17 +88,17 @@ func (p *Plugin) deploy(ctx context.Context) error {
 }
 
 func (p *Plugin) teardown(ctx context.Context) error {
-	url := p.getPreviewUrl()
+	url := p.getPreviewURL()
 	repo := p.RepoOwner + "/" + p.RepoName
 
-	comment, err := p.comment.Find(ctx, repo, p.PullRequestId)
+	comment, err := p.comment.Find(ctx, repo, p.PullRequestID)
 	if err != nil && err.Error() != "Comment not found" {
 		return err
 	}
 
-	commentText := fmt.Sprintf("Teading down https://%s\n", url)
+	commentText := fmt.Sprintf("Tearing down https://%s\n", url)
 	fmt.Println(commentText)
-	comment, err = p.comment.UpdateOrCreateComment(ctx, repo, p.PullRequestId, comment, commentText)
+	comment, err = p.comment.UpdateOrCreateComment(ctx, repo, p.PullRequestID, comment, commentText)
 	if err != nil {
 		return err
 	}
@@ -109,7 +109,7 @@ func (p *Plugin) teardown(ctx context.Context) error {
 
 	commentText = "Deployment of preview was torn down"
 	fmt.Println(commentText)
-	_, err = p.comment.UpdateOrCreateComment(ctx, repo, p.PullRequestId, comment, commentText)
+	_, err = p.comment.UpdateOrCreateComment(ctx, repo, p.PullRequestID, comment, commentText)
 	if err != nil {
 		return err
 	}
@@ -117,11 +117,11 @@ func (p *Plugin) teardown(ctx context.Context) error {
 	return nil
 }
 
-func (p *Plugin) getPreviewUrl() string {
+func (p *Plugin) getPreviewURL() string {
 	pattern := regexp.MustCompile(`[^a-zA-Z0-9\-]`)
 	owner := pattern.ReplaceAllString(p.RepoOwner, "-")
 	repo := pattern.ReplaceAllString(p.RepoName, "-")
-	return fmt.Sprintf("%s-%s-pr-%d.surge.sh", owner, repo, p.PullRequestId)
+	return fmt.Sprintf("%s-%s-pr-%d.surge.sh", owner, repo, p.PullRequestID)
 }
 
 func (p *Plugin) runSurgeCommand(teardown bool) error {
@@ -134,8 +134,8 @@ func (p *Plugin) runSurgeCommand(teardown bool) error {
 		cmdArg = "teardown"
 	}
 
-	cmd := exec.Command("surge", cmdArg, p.getPreviewUrl(), `--token`, p.SurgeToken)
-	fmt.Println("#", strings.Join(append(cmd.Args, p.getPreviewUrl(), "--token ****"), " "))
+	cmd := exec.Command("surge", cmdArg, p.getPreviewURL(), `--token`, p.SurgeToken)
+	fmt.Println("#", strings.Join(append(cmd.Args, p.getPreviewURL(), "--token ****"), " "))
 	stdout, err := cmd.StdoutPipe()
 	if err != nil {
 		return err
@@ -145,7 +145,7 @@ func (p *Plugin) runSurgeCommand(teardown bool) error {
 	waitGroup.Add(1)
 	go func() {
 		defer waitGroup.Done()
-		io.Copy(writer, stdout)
+		_, _ = io.Copy(writer, stdout)
 	}()
 
 	if err := cmd.Run(); err != nil {
