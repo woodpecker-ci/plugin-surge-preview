@@ -1,10 +1,14 @@
 # Changelog
 
-## [1.2.3](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.2.3) - 2023-12-28
+## [1.3.0](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.0) - 2023-12-29
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@renovate[bot], @pat-s
+@anbraten, @renovate[bot], @pat-s
+
+### 📈 Enhancement
+
+- Support teardown on PR closed [[#42](https://github.com/woodpecker-ci/plugin-surge-preview/pull/42)]
 
 ### Misc
 
