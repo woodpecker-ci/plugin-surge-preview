@@ -59,7 +59,7 @@ plugin-surge-preview
 surge --version
 ```
 
-To [tear down a project on surge.sh](https://surge.sh/help/tearing-down-a-project), run the CLI with the environment variable `CI_PIPELINE_EVENT=pull_close`.
+To [tear down a project on surge.sh](https://surge.sh/help/tearing-down-a-project), run the CLI with the environment variable `CI_PIPELINE_EVENT=pull_request_closed`.
 
 ## Credits
 
