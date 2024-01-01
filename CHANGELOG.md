@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.3.1](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.1) - 2024-01-01
+
+### ❤️ Thanks to all contributors! ❤️
+
+@renovate[bot]
+
+### Misc
+
+- fix(deps): update module github.com/urfave/cli/v2 to v2.27.1 [[#43](https://github.com/woodpecker-ci/plugin-surge-preview/pull/43)]
+
 ## [1.3.0](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.0) - 2023-12-29
 
 ### ❤️ Thanks to all contributors! ❤️
