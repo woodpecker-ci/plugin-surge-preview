@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@renovate[bot]
+@pre-commit-ci[bot], @renovate[bot]
 
 ### Misc
 
+- [pre-commit.ci] pre-commit autoupdate [[#45](https://github.com/woodpecker-ci/plugin-surge-preview/pull/45)]
 - fix(deps): update module github.com/urfave/cli/v2 to v2.27.1 [[#43](https://github.com/woodpecker-ci/plugin-surge-preview/pull/43)]
 
 ## [1.3.0](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.0) - 2023-12-29
