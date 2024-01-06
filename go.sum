@@ -31,6 +31,8 @@ github.com/jenkins-x/go-scm v1.14.21 h1:jXHg8vHXQnEj2vV0YcNIYMTTvFg4cEtMbVimtmmY
 github.com/jenkins-x/go-scm v1.14.21/go.mod h1:hE3p9HN+S6GNrunLq0RfNv75kA5KJCrD9GNyfhgWu6Y=
 github.com/jenkins-x/go-scm v1.14.24 h1:m6btHeg/DUXNJeRa4ySAgwmwCEY7s1OjSkdK6Y1DFKI=
 github.com/jenkins-x/go-scm v1.14.24/go.mod h1:lKqSATMN9YB1Dbl8s8tzaUf5AFlAd+JRFipu2M6Ut2Y=
+github.com/jenkins-x/go-scm v1.14.25 h1:kJpnb8BDp6OXuCc16vG0YHfMKJtRXYY3zY2sHANl0D0=
+github.com/jenkins-x/go-scm v1.14.25/go.mod h1:UY/0wAbusny+ZS+1fHU3lezv5gNwbevujp+tDoAEKYc=
 github.com/mitchellh/copystructure v1.2.0 h1:vpKXTN4ewci03Vljg/q9QvCGUDttBOGBIa15WveJJGw=
 github.com/mitchellh/copystructure v1.2.0/go.mod h1:qLl+cE2AmVv+CoeAwDPye/v+N2HKCj9FbZEVFJRxO9s=
 github.com/mitchellh/reflectwalk v1.0.2 h1:G2LzWKi524PWgd3mLHV8Y5k7s6XUvT0Gef6zxSIeXaQ=
