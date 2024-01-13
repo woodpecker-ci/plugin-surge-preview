@@ -1,10 +1,14 @@
 # Changelog
 
-## [1.3.1](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.1) - 2024-01-07
+## [1.3.1](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.1) - 2024-01-13
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@renovate[bot], @pre-commit-ci[bot]
+@qwerty287, @renovate[bot], @pre-commit-ci[bot]
+
+### 📚 Documentation
+
+- Add logo [[#48](https://github.com/woodpecker-ci/plugin-surge-preview/pull/48)]
 
 ### Misc
 
