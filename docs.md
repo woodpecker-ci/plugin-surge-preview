@@ -1,7 +1,7 @@
 ---
 name: Surge preview plugin
 authors: Woodpecker Authors
-icon: https://woodpecker-ci.org/img/logo.svg
+icon: https://raw.githubusercontent.com/woodpecker-ci/plugin-surge-preview/main/surge.svg
 description: Plugin to create static pages deployments as preview environments on pull-requests.
 tags: [publish, cdn, preview]
 containerImage: woodpeckerci/plugin-surge-preview
