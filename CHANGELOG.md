@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.3.1](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.1) - 2024-02-10
+## [1.3.1](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.1) - 2024-03-16
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -13,6 +13,7 @@
 
 ### Misc
 
+- chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v3.2.0 [[#60](https://github.com/woodpecker-ci/plugin-surge-preview/pull/60)]
 - chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v3.1.0 [[#58](https://github.com/woodpecker-ci/plugin-surge-preview/pull/58)]
 - chore(deps): update golang docker tag to v1.22 [[#57](https://github.com/woodpecker-ci/plugin-surge-preview/pull/57)]
 - [pre-commit.ci] pre-commit autoupdate [[#56](https://github.com/woodpecker-ci/plugin-surge-preview/pull/56)]
