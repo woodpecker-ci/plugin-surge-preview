@@ -13,6 +13,7 @@
 
 ### Misc
 
+- chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v3.2.1 [[#64](https://github.com/woodpecker-ci/plugin-surge-preview/pull/64)]
 - chore(deps): update pre-commit hook golangci/golangci-lint to v1.57.2 [[#63](https://github.com/woodpecker-ci/plugin-surge-preview/pull/63)]
 - fix(deps): update module github.com/jenkins-x/go-scm to v1.14.29 [[#62](https://github.com/woodpecker-ci/plugin-surge-preview/pull/62)]
 - chore(deps): update pre-commit hook golangci/golangci-lint to v1.57.1 [[#61](https://github.com/woodpecker-ci/plugin-surge-preview/pull/61)]
