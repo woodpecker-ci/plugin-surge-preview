@@ -1,5 +1,39 @@
 # Changelog
 
+## [1.3.1](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.1) - 2024-04-20
+
+### ❤️ Thanks to all contributors! ❤️
+
+@qwerty287
+
+### 📚 Documentation
+
+- Fix author key [[#50](https://github.com/woodpecker-ci/plugin-surge-preview/pull/50)]
+- Add logo [[#48](https://github.com/woodpecker-ci/plugin-surge-preview/pull/48)]
+
+### Misc
+
+- chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v1.1.1 [[#67](https://github.com/woodpecker-ci/plugin-surge-preview/pull/67)]
+- chore(deps): update pre-commit hook pre-commit/pre-commit-hooks to v4.6.0 [[#66](https://github.com/woodpecker-ci/plugin-surge-preview/pull/66)]
+- fix(deps): update module github.com/jenkins-x/go-scm to v1.14.30 [[#65](https://github.com/woodpecker-ci/plugin-surge-preview/pull/65)]
+- chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v3.2.1 [[#64](https://github.com/woodpecker-ci/plugin-surge-preview/pull/64)]
+- chore(deps): update pre-commit hook golangci/golangci-lint to v1.57.2 [[#63](https://github.com/woodpecker-ci/plugin-surge-preview/pull/63)]
+- fix(deps): update module github.com/jenkins-x/go-scm to v1.14.29 [[#62](https://github.com/woodpecker-ci/plugin-surge-preview/pull/62)]
+- chore(deps): update pre-commit hook golangci/golangci-lint to v1.57.1 [[#61](https://github.com/woodpecker-ci/plugin-surge-preview/pull/61)]
+- chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v3.2.0 [[#60](https://github.com/woodpecker-ci/plugin-surge-preview/pull/60)]
+- chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v3.1.0 [[#58](https://github.com/woodpecker-ci/plugin-surge-preview/pull/58)]
+- chore(deps): update golang docker tag to v1.22 [[#57](https://github.com/woodpecker-ci/plugin-surge-preview/pull/57)]
+- [pre-commit.ci] pre-commit autoupdate [[#56](https://github.com/woodpecker-ci/plugin-surge-preview/pull/56)]
+- chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v3.0.1 [[#55](https://github.com/woodpecker-ci/plugin-surge-preview/pull/55)]
+- chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v1.1.0 [[#54](https://github.com/woodpecker-ci/plugin-surge-preview/pull/54)]
+- fix(deps): update module github.com/jenkins-x/go-scm to v1.14.26 [[#53](https://github.com/woodpecker-ci/plugin-surge-preview/pull/53)]
+- chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v3 [[#52](https://github.com/woodpecker-ci/plugin-surge-preview/pull/52)]
+- Use cleartext username [[#51](https://github.com/woodpecker-ci/plugin-surge-preview/pull/51)]
+- chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v2.3.0 [[#47](https://github.com/woodpecker-ci/plugin-surge-preview/pull/47)]
+- fix(deps): update module github.com/jenkins-x/go-scm to v1.14.25 [[#46](https://github.com/woodpecker-ci/plugin-surge-preview/pull/46)]
+- [pre-commit.ci] pre-commit autoupdate [[#45](https://github.com/woodpecker-ci/plugin-surge-preview/pull/45)]
+- fix(deps): update module github.com/urfave/cli/v2 to v2.27.1 [[#43](https://github.com/woodpecker-ci/plugin-surge-preview/pull/43)]
+
 ## [1.3.0](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.0) - 2023-12-29
 
 ### ❤️ Thanks to all contributors! ❤️
