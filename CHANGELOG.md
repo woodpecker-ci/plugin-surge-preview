@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.3.2](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.2) - 2024-05-20
+## [1.3.2](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.2) - 2024-05-21
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,6 +8,7 @@
 
 ### Misc
 
+- fix(deps): update module github.com/jenkins-x/go-scm to v1.14.35 [[#77](https://github.com/woodpecker-ci/plugin-surge-preview/pull/77)]
 - chore(deps): update pre-commit hook golangci/golangci-lint to v1.58.2 [[#76](https://github.com/woodpecker-ci/plugin-surge-preview/pull/76)]
 - Ignore golangci-lint in pre-commit.ci [[#75](https://github.com/woodpecker-ci/plugin-surge-preview/pull/75)]
 - chore(deps): update pre-commit hook golangci/golangci-lint to v1.58.1 [[#74](https://github.com/woodpecker-ci/plugin-surge-preview/pull/74)]
