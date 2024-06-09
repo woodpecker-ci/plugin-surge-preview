@@ -14,8 +14,8 @@ github.com/h2non/parth v0.0.0-20190131123155-b4df798d6542/go.mod h1:Ow0tF8D4Kplb
 github.com/hashicorp/go-version v1.2.1/go.mod h1:fltr4n8CU8Ke44wwGCBoEymUuxUHl09ZGVZPK5anwXA=
 github.com/hashicorp/go-version v1.3.0 h1:McDWVJIU/y+u1BRV06dPaLfLCaT7fUTJLp5r04x7iNw=
 github.com/hashicorp/go-version v1.3.0/go.mod h1:fltr4n8CU8Ke44wwGCBoEymUuxUHl09ZGVZPK5anwXA=
-github.com/jenkins-x/go-scm v1.14.36 h1:JbEt2BIq1v/Jnbd+DW3zEAO4ZjONB53guF8OfxaARDY=
-github.com/jenkins-x/go-scm v1.14.36/go.mod h1:MRLj/i0mhpMtqwwZV+x78SkEB8mx9rv3ebdRg9WunS8=
+github.com/jenkins-x/go-scm v1.14.37 h1:Tq59JXyg5p4iuvIKf6+EA+Yzgxgpn/yG/yfM1mL8DDg=
+github.com/jenkins-x/go-scm v1.14.37/go.mod h1:MRLj/i0mhpMtqwwZV+x78SkEB8mx9rv3ebdRg9WunS8=
 github.com/mitchellh/copystructure v1.2.0 h1:vpKXTN4ewci03Vljg/q9QvCGUDttBOGBIa15WveJJGw=
 github.com/mitchellh/copystructure v1.2.0/go.mod h1:qLl+cE2AmVv+CoeAwDPye/v+N2HKCj9FbZEVFJRxO9s=
 github.com/mitchellh/reflectwalk v1.0.2 h1:G2LzWKi524PWgd3mLHV8Y5k7s6XUvT0Gef6zxSIeXaQ=
