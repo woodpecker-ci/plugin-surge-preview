@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.3.2](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.2) - 2024-06-10
+
+### ❤️ Thanks to all contributors! ❤️
+
+@qwerty287
+
+### Misc
+
+- chore(deps): update pre-commit hook golangci/golangci-lint to v1.59.1 [[#83](https://github.com/woodpecker-ci/plugin-surge-preview/pull/83)]
+- fix(deps): update module github.com/jenkins-x/go-scm to v1.14.37 [[#82](https://github.com/woodpecker-ci/plugin-surge-preview/pull/82)]
+- fix(deps): update module github.com/jenkins-x/go-scm to v1.14.36 [[#81](https://github.com/woodpecker-ci/plugin-surge-preview/pull/81)]
+- chore(deps): update pre-commit non-major [[#79](https://github.com/woodpecker-ci/plugin-surge-preview/pull/79)]
+- chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v1.1.2 [[#78](https://github.com/woodpecker-ci/plugin-surge-preview/pull/78)]
+- fix(deps): update module github.com/jenkins-x/go-scm to v1.14.35 [[#77](https://github.com/woodpecker-ci/plugin-surge-preview/pull/77)]
+- chore(deps): update pre-commit hook golangci/golangci-lint to v1.58.2 [[#76](https://github.com/woodpecker-ci/plugin-surge-preview/pull/76)]
+- Ignore golangci-lint in pre-commit.ci [[#75](https://github.com/woodpecker-ci/plugin-surge-preview/pull/75)]
+- chore(deps): update pre-commit hook golangci/golangci-lint to v1.58.1 [[#74](https://github.com/woodpecker-ci/plugin-surge-preview/pull/74)]
+- chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v4 [[#73](https://github.com/woodpecker-ci/plugin-surge-preview/pull/73)]
+- chore(deps): update pre-commit non-major [[#71](https://github.com/woodpecker-ci/plugin-surge-preview/pull/71)]
+- fix(deps): update module github.com/jenkins-x/go-scm to v1.14.34 [[#70](https://github.com/woodpecker-ci/plugin-surge-preview/pull/70)]
+- fix(deps): update module github.com/urfave/cli/v2 to v2.27.2 [[#68](https://github.com/woodpecker-ci/plugin-surge-preview/pull/68)]
+
 ## [1.3.1](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.1) - 2024-04-20
 
 ### ❤️ Thanks to all contributors! ❤️
