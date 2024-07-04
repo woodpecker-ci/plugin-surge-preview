@@ -2,7 +2,7 @@ module github.com/woodpecker-ci/plugin-surge-preview
 
 go 1.22.3
 
-toolchain go1.22.4
+toolchain go1.22.5
 
 require (
 	github.com/jenkins-x/go-scm v1.14.37
