@@ -2,11 +2,11 @@ module github.com/woodpecker-ci/plugin-surge-preview
 
 go 1.22.3
 
-toolchain go1.22.6
+toolchain go1.23.0
 
 require (
 	github.com/jenkins-x/go-scm v1.14.41
-	github.com/urfave/cli/v2 v2.27.3
+	github.com/urfave/cli/v2 v2.27.4
 )
 
 require (
