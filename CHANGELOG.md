@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.3.3](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.3) - 2024-09-14
+
+### Misc
+
+- chore(deps): update pre-commit hook golangci/golangci-lint to v1.61.0 [[#99](https://github.com/woodpecker-ci/plugin-surge-preview/pull/99)]
+
 ## [1.3.2](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.2) - 2024-09-07
 
 ### ❤️ Thanks to all contributors! ❤️
