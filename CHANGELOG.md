@@ -1,9 +1,10 @@
 # Changelog
 
-## [1.3.3](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.3) - 2024-10-02
+## [1.3.3](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.3) - 2024-10-06
 
 ### 📦️ Dependency
 
+- chore(deps): update pre-commit hook pre-commit/pre-commit-hooks to v5 [[#104](https://github.com/woodpecker-ci/plugin-surge-preview/pull/104)]
 - chore(deps): update dependency go to v1.23.2 [[#103](https://github.com/woodpecker-ci/plugin-surge-preview/pull/103)]
 - chore(deps): update pre-commit hook igorshubovych/markdownlint-cli to v0.42.0 [[#102](https://github.com/woodpecker-ci/plugin-surge-preview/pull/102)]
 - chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v2 [[#101](https://github.com/woodpecker-ci/plugin-surge-preview/pull/101)]
