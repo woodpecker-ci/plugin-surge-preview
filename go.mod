@@ -6,13 +6,13 @@ toolchain go1.23.2
 
 require (
 	github.com/jenkins-x/go-scm v1.14.43
-	github.com/urfave/cli/v2 v2.27.4
+	github.com/urfave/cli/v2 v2.27.5
 )
 
 require (
 	code.gitea.io/sdk/gitea v0.14.0 // indirect
 	github.com/bluekeyes/go-gitdiff v0.8.0 // indirect
-	github.com/cpuguy83/go-md2man/v2 v2.0.4 // indirect
+	github.com/cpuguy83/go-md2man/v2 v2.0.5 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/hashicorp/go-version v1.3.0 // indirect
 	github.com/mitchellh/copystructure v1.2.0 // indirect
