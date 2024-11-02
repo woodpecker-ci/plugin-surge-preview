@@ -7,7 +7,7 @@ RUN --mount=type=cache,target=/root/.cache/go-build \
     --mount=type=cache,target=/go/pkg \
     CGO_ENABLED=0 GOOS=${TARGETOS} GOARCH=${TARGETARCH} go build -ldflags '-s -w -extldflags "-static"' -o plugin-surge-preview
 
-FROM --platform=$BUILDPLATFORM node:21-alpine
+FROM --platform=$BUILDPLATFORM node:22-alpine
 
 RUN npm install -g surge@0.23.1
 COPY --from=build src/plugin-surge-preview /bin/
