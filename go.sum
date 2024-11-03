@@ -1,5 +1,7 @@
 code.gitea.io/sdk/gitea v0.14.0 h1:m4J352I3p9+bmJUfS+g0odeQzBY/5OXP91Gv6D4fnJ0=
 code.gitea.io/sdk/gitea v0.14.0/go.mod h1:89WiyOX1KEcvjP66sRHdu0RafojGo60bT9UqW17VbWs=
+fortio.org/safecast v1.0.0 h1:dr3131WPX8iS1pTf76+39WeXbTrerDYLvi9s7Oi3wiY=
+fortio.org/safecast v1.0.0/go.mod h1:xZmcPk3vi4kuUFf+tq4SvnlVdwViqf6ZSZl91Jr9Jdg=
 github.com/bluekeyes/go-gitdiff v0.8.0 h1:Nn1wfw3/XeKoc3lWk+2bEXGUHIx36kj80FM1gVcBk+o=
 github.com/bluekeyes/go-gitdiff v0.8.0/go.mod h1:WWAk1Mc6EgWarCrPFO+xeYlujPu98VuLW3Tu+B/85AE=
 github.com/cpuguy83/go-md2man/v2 v2.0.5 h1:ZtcqGrnekaHpVLArFSe4HK5DoKx1T0rq2DwVB0alcyc=
@@ -14,8 +16,8 @@ github.com/h2non/parth v0.0.0-20190131123155-b4df798d6542/go.mod h1:Ow0tF8D4Kplb
 github.com/hashicorp/go-version v1.2.1/go.mod h1:fltr4n8CU8Ke44wwGCBoEymUuxUHl09ZGVZPK5anwXA=
 github.com/hashicorp/go-version v1.3.0 h1:McDWVJIU/y+u1BRV06dPaLfLCaT7fUTJLp5r04x7iNw=
 github.com/hashicorp/go-version v1.3.0/go.mod h1:fltr4n8CU8Ke44wwGCBoEymUuxUHl09ZGVZPK5anwXA=
-github.com/jenkins-x/go-scm v1.14.43 h1:hhFivDj28dVEDzcI6S07z6hZRK1speL8P1A3SWuF9i0=
-github.com/jenkins-x/go-scm v1.14.43/go.mod h1:Rkk6rQeOzDDIvQRcwiFzTkBHPX1/fOVmSlxE9sqSJWM=
+github.com/jenkins-x/go-scm v1.14.44 h1:q670h0zho+U5VdhC+Xo6MLWnFXCok1Pk/bbhxmJdF9Y=
+github.com/jenkins-x/go-scm v1.14.44/go.mod h1:1RPxLZndnvu31XhFZ+RTvXiHmMX70HkQ17bRupTQxGs=
 github.com/mitchellh/copystructure v1.2.0 h1:vpKXTN4ewci03Vljg/q9QvCGUDttBOGBIa15WveJJGw=
 github.com/mitchellh/copystructure v1.2.0/go.mod h1:qLl+cE2AmVv+CoeAwDPye/v+N2HKCj9FbZEVFJRxO9s=
 github.com/mitchellh/reflectwalk v1.0.2 h1:G2LzWKi524PWgd3mLHV8Y5k7s6XUvT0Gef6zxSIeXaQ=
