@@ -1,9 +1,10 @@
 # Changelog
 
-## [1.3.3](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.3) - 2024-11-03
+## [1.3.3](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.3) - 2024-11-07
 
 ### 📦️ Dependency
 
+- chore(deps): update dependency go to v1.23.3 [[#111](https://github.com/woodpecker-ci/plugin-surge-preview/pull/111)]
 - fix(deps): update module github.com/jenkins-x/go-scm to v1.14.44 [[#110](https://github.com/woodpecker-ci/plugin-surge-preview/pull/110)]
 - chore(deps): update node.js to v22 [[#109](https://github.com/woodpecker-ci/plugin-surge-preview/pull/109)]
 - fix(deps): update module github.com/urfave/cli/v2 to v2.27.5 [[#108](https://github.com/woodpecker-ci/plugin-surge-preview/pull/108)]
