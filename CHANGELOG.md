@@ -1,6 +1,10 @@
 # Changelog
 
-## [1.3.3](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.3) - 2024-11-23
+## [1.3.3](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.3) - 2024-11-27
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Gusted
 
 ### 📦️ Dependency
 
@@ -21,6 +25,7 @@
 
 ### Misc
 
+- fix: allow plugin to run on forgejo forges [[#115](https://github.com/woodpecker-ci/plugin-surge-preview/pull/115)]
 - [pre-commit.ci] pre-commit autoupdate [[#105](https://github.com/woodpecker-ci/plugin-surge-preview/pull/105)]
 
 ## [1.3.2](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.2) - 2024-09-07
