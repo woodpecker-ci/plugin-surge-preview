@@ -42,7 +42,13 @@ func (p *Plugin) Exec(ctx context.Context) error {
 	}
 
 	p.comment = &comment{}
-	err := p.comment.Load(p.ForgeType, p.ForgeURL, p.ForgeRepoToken)
+
+	driver := p.ForgeType
+	// https://github.com/jenkins-x/go-scm does not understand forgejo.
+	if driver == "forgejo" {
+		driver = "gitea"
+	}
+	err := p.comment.Load(driver, p.ForgeURL, p.ForgeRepoToken)
 	if err != nil {
 		return err
 	}
