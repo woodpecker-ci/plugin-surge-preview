@@ -6,6 +6,10 @@
 
 @Gusted
 
+### 🐛 Bug Fixes
+
+- fix: allow plugin to run on forgejo forges [[#115](https://github.com/woodpecker-ci/plugin-surge-preview/pull/115)]
+
 ### 📦️ Dependency
 
 - chore(deps): update pre-commit hook golangci/golangci-lint to v1.62.2 [[#116](https://github.com/woodpecker-ci/plugin-surge-preview/pull/116)]
@@ -26,7 +30,6 @@
 
 ### Misc
 
-- fix: allow plugin to run on forgejo forges [[#115](https://github.com/woodpecker-ci/plugin-surge-preview/pull/115)]
 - [pre-commit.ci] pre-commit autoupdate [[#105](https://github.com/woodpecker-ci/plugin-surge-preview/pull/105)]
 
 ## [1.3.2](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.2) - 2024-09-07
