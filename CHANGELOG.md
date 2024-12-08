@@ -4,6 +4,7 @@
 
 ### 📦️ Dependency
 
+- chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v3.1.0 [[#121](https://github.com/woodpecker-ci/plugin-surge-preview/pull/121)]
 - chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v3 [[#119](https://github.com/woodpecker-ci/plugin-surge-preview/pull/119)]
 - chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v5.1.0 [[#120](https://github.com/woodpecker-ci/plugin-surge-preview/pull/120)]
 - chore(deps): update dependency go to v1.23.4 [[#117](https://github.com/woodpecker-ci/plugin-surge-preview/pull/117)]
