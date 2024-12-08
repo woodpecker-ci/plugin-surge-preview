@@ -1,9 +1,11 @@
 # Changelog
 
-## [1.3.4](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.4) - 2024-12-04
+## [1.3.4](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.4) - 2024-12-08
 
 ### 📦️ Dependency
 
+- chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v3 [[#119](https://github.com/woodpecker-ci/plugin-surge-preview/pull/119)]
+- chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v5.1.0 [[#120](https://github.com/woodpecker-ci/plugin-surge-preview/pull/120)]
 - chore(deps): update dependency go to v1.23.4 [[#117](https://github.com/woodpecker-ci/plugin-surge-preview/pull/117)]
 
 ## [1.3.3](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.3) - 2024-11-30
