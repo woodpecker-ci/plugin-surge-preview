@@ -4,6 +4,7 @@
 
 ### 📦️ Dependency
 
+- chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v3.1.1 [[#127](https://github.com/woodpecker-ci/plugin-surge-preview/pull/127)]
 - fix(deps): update module github.com/jenkins-x/go-scm to v1.14.51 [[#126](https://github.com/woodpecker-ci/plugin-surge-preview/pull/126)]
 - fix(deps): update module github.com/jenkins-x/go-scm to v1.14.50 [[#125](https://github.com/woodpecker-ci/plugin-surge-preview/pull/125)]
 - fix(deps): update module github.com/jenkins-x/go-scm to v1.14.47 [[#124](https://github.com/woodpecker-ci/plugin-surge-preview/pull/124)]
