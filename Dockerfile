@@ -9,7 +9,10 @@ RUN --mount=type=cache,target=/root/.cache/go-build \
 
 FROM --platform=$BUILDPLATFORM node:22-alpine
 
-RUN npm install -g surge@0.23.1
+# renovate: datasource=github-tags depName=sintaxi/surge
+ENV SURGE_VERSION=v0.24.6
+
+RUN npm install -g surge@${SURGE_VERSION#v}
 COPY --from=build src/plugin-surge-preview /bin/
 
 ENTRYPOINT ["/bin/plugin-surge-preview"]
