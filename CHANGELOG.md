@@ -1,5 +1,31 @@
 # Changelog
 
+## [1.3.4](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.4) - 2025-01-11
+
+### ❤️ Thanks to all contributors! ❤️
+
+@pat-s
+
+### 📦️ Dependency
+
+- chore(deps): update pre-commit hook golangci/golangci-lint to v1.63.4 [[#130](https://github.com/woodpecker-ci/plugin-surge-preview/pull/130)]
+- fix(deps): update module github.com/jenkins-x/go-scm to v1.14.53 [[#129](https://github.com/woodpecker-ci/plugin-surge-preview/pull/129)]
+- fix(deps): update module github.com/jenkins-x/go-scm to v1.14.52 [[#128](https://github.com/woodpecker-ci/plugin-surge-preview/pull/128)]
+- chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v3.1.1 [[#127](https://github.com/woodpecker-ci/plugin-surge-preview/pull/127)]
+- fix(deps): update module github.com/jenkins-x/go-scm to v1.14.51 [[#126](https://github.com/woodpecker-ci/plugin-surge-preview/pull/126)]
+- fix(deps): update module github.com/jenkins-x/go-scm to v1.14.50 [[#125](https://github.com/woodpecker-ci/plugin-surge-preview/pull/125)]
+- fix(deps): update module github.com/jenkins-x/go-scm to v1.14.47 [[#124](https://github.com/woodpecker-ci/plugin-surge-preview/pull/124)]
+- fix(deps): update module github.com/jenkins-x/go-scm to v1.14.46 [[#123](https://github.com/woodpecker-ci/plugin-surge-preview/pull/123)]
+- fix(deps): update module github.com/jenkins-x/go-scm to v1.14.45 [[#122](https://github.com/woodpecker-ci/plugin-surge-preview/pull/122)]
+- chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v3.1.0 [[#121](https://github.com/woodpecker-ci/plugin-surge-preview/pull/121)]
+- chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v3 [[#119](https://github.com/woodpecker-ci/plugin-surge-preview/pull/119)]
+- chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v5.1.0 [[#120](https://github.com/woodpecker-ci/plugin-surge-preview/pull/120)]
+- chore(deps): update dependency go to v1.23.4 [[#117](https://github.com/woodpecker-ci/plugin-surge-preview/pull/117)]
+
+### Misc
+
+- Update `surge` and versionize via `renovate` [[#131](https://github.com/woodpecker-ci/plugin-surge-preview/pull/131)]
+
 ## [1.3.3](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.3) - 2024-11-30
 
 ### ❤️ Thanks to all contributors! ❤️
