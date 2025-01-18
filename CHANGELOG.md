@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.3.5](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.5) - 2025-01-18
+
+### 📦️ Dependency
+
+- chore(deps): update dependency go to v1.23.5 [[#132](https://github.com/woodpecker-ci/plugin-surge-preview/pull/132)]
+
 ## [1.3.4](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.4) - 2025-01-11
 
 ### ❤️ Thanks to all contributors! ❤️
