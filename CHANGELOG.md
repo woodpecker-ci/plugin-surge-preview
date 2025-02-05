@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.3.5](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.5) - 2025-02-05
+
+### 📦️ Dependency
+
+- fix(deps): update golang deps non-major [[#137](https://github.com/woodpecker-ci/plugin-surge-preview/pull/137)]
+- chore(deps): update pre-commit hook igorshubovych/markdownlint-cli to v0.44.0 [[#136](https://github.com/woodpecker-ci/plugin-surge-preview/pull/136)]
+- chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v5.2.0 [[#135](https://github.com/woodpecker-ci/plugin-surge-preview/pull/135)]
+- chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v3.1.3 [[#134](https://github.com/woodpecker-ci/plugin-surge-preview/pull/134)]
+- chore(deps): update dependency go to v1.23.5 [[#132](https://github.com/woodpecker-ci/plugin-surge-preview/pull/132)]
+
 ## [1.3.4](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.4) - 2025-01-11
 
 ### ❤️ Thanks to all contributors! ❤️
