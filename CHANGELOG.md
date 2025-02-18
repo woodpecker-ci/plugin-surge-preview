@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.3.5](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.5) - 2025-02-18
+
+### 📦️ Dependency
+
+- fix(deps): update module github.com/jenkins-x/go-scm to v1.14.56 [[#143](https://github.com/woodpecker-ci/plugin-surge-preview/pull/143)]
+- chore(deps): update pre-commit hook golangci/golangci-lint to v1.64.5 [[#142](https://github.com/woodpecker-ci/plugin-surge-preview/pull/142)]
+- chore(deps): update golang docker tag to v1.24 [[#141](https://github.com/woodpecker-ci/plugin-surge-preview/pull/141)]
+- chore(deps): update dependency go to v1.24.0 [[#140](https://github.com/woodpecker-ci/plugin-surge-preview/pull/140)]
+- chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v5.2.1 [[#139](https://github.com/woodpecker-ci/plugin-surge-preview/pull/139)]
+- fix(deps): update module github.com/jenkins-x/go-scm to v1.14.55 [[#138](https://github.com/woodpecker-ci/plugin-surge-preview/pull/138)]
+- fix(deps): update golang deps non-major [[#137](https://github.com/woodpecker-ci/plugin-surge-preview/pull/137)]
+- chore(deps): update pre-commit hook igorshubovych/markdownlint-cli to v0.44.0 [[#136](https://github.com/woodpecker-ci/plugin-surge-preview/pull/136)]
+- chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v5.2.0 [[#135](https://github.com/woodpecker-ci/plugin-surge-preview/pull/135)]
+- chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v3.1.3 [[#134](https://github.com/woodpecker-ci/plugin-surge-preview/pull/134)]
+- chore(deps): update dependency go to v1.23.5 [[#132](https://github.com/woodpecker-ci/plugin-surge-preview/pull/132)]
+
 ## [1.3.4](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.4) - 2025-01-11
 
 ### ❤️ Thanks to all contributors! ❤️
