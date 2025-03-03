@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.3.6](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.6) - 2025-03-03
+
+### Misc
+
+- [pre-commit.ci] pre-commit autoupdate [[#144](https://github.com/woodpecker-ci/plugin-surge-preview/pull/144)]
+
 ## [1.3.5](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.5) - 2025-02-18
 
 ### 📦️ Dependency
