@@ -1,9 +1,10 @@
 # Changelog
 
-## [1.3.6](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.6) - 2025-03-05
+## [1.3.6](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.6) - 2025-03-06
 
 ### 📦️ Dependency
 
+- fix(deps): update module github.com/urfave/cli/v2 to v2.27.6 [[#147](https://github.com/woodpecker-ci/plugin-surge-preview/pull/147)]
 - chore(deps): update dependency go to v1.24.1 [[#146](https://github.com/woodpecker-ci/plugin-surge-preview/pull/146)]
 
 ### Misc
