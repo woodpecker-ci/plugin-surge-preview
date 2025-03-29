@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.3.6](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.6) - 2025-03-29
+
+### 📦️ Dependency
+
+- chore(deps): update pre-commit hook golangci/golangci-lint to v2 [[#152](https://github.com/woodpecker-ci/plugin-surge-preview/pull/152)]
+- chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v3.1.4 [[#151](https://github.com/woodpecker-ci/plugin-surge-preview/pull/151)]
+- chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v5.2.2 [[#150](https://github.com/woodpecker-ci/plugin-surge-preview/pull/150)]
+- chore(deps): update pre-commit hook golangci/golangci-lint to v1.64.8 [[#149](https://github.com/woodpecker-ci/plugin-surge-preview/pull/149)]
+- chore(deps): update pre-commit hook golangci/golangci-lint to v1.64.7 [[#148](https://github.com/woodpecker-ci/plugin-surge-preview/pull/148)]
+- fix(deps): update module github.com/urfave/cli/v2 to v2.27.6 [[#147](https://github.com/woodpecker-ci/plugin-surge-preview/pull/147)]
+- chore(deps): update dependency go to v1.24.1 [[#146](https://github.com/woodpecker-ci/plugin-surge-preview/pull/146)]
+
+### Misc
+
+- [pre-commit.ci] pre-commit autoupdate [[#144](https://github.com/woodpecker-ci/plugin-surge-preview/pull/144)]
+
 ## [1.3.5](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.5) - 2025-02-18
 
 ### 📦️ Dependency
