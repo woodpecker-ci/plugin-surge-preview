@@ -4,6 +4,7 @@
 
 ### 📦️ Dependency
 
+- chore(deps): update pre-commit hook golangci/golangci-lint to v2 [[#152](https://github.com/woodpecker-ci/plugin-surge-preview/pull/152)]
 - chore(deps): update woodpeckerci/plugin-ready-release-go docker tag to v3.1.4 [[#151](https://github.com/woodpecker-ci/plugin-surge-preview/pull/151)]
 - chore(deps): update woodpeckerci/plugin-docker-buildx docker tag to v5.2.2 [[#150](https://github.com/woodpecker-ci/plugin-surge-preview/pull/150)]
 - chore(deps): update pre-commit hook golangci/golangci-lint to v1.64.8 [[#149](https://github.com/woodpecker-ci/plugin-surge-preview/pull/149)]
