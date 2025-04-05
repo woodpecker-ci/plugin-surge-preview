@@ -5,7 +5,7 @@ go 1.22.3
 toolchain go1.24.2
 
 require (
-	github.com/jenkins-x/go-scm v1.14.56
+	github.com/jenkins-x/go-scm v1.14.57
 	github.com/urfave/cli/v2 v2.27.6
 )
 
