@@ -3,7 +3,7 @@
 [![Build status](https://ci.woodpecker-ci.org/api/badges/woodpecker-ci/plugin-surge-preview/status.svg)](https://ci.woodpecker-ci.org/woodpecker-ci/plugin-surge-preview)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/woodpeckerci/plugin-surge-preview?label=DockerHub%20latest%20version&sort=semver)](https://hub.docker.com/r/woodpeckerci/plugin-surge-preview/tags)
 
-Woodpecker plugin to deploy static pages for reviewing to [surge.sh](https://surge.sh/).
+Woodpecker plugin to deploy static websites (for PR previews) to [surge.sh](https://surge.sh/).
 
 ## Build
 
@@ -15,17 +15,17 @@ docker buildx build -t woodpeckerci/plugin-surge-preview . --load
 
 ## Usage
 
-Create a woodpecker pipeline in your project and add a step like this one:
+Create a Woodpecker pipeline in your project and add a step like this one:
 
 ```yml
-pipeline:
-  preview:
-    image: woodpeckerci/plugin-surge-preview
+steps:
+  - name: PR preview
+    image: woodpeckerci/plugin-surge-preview:<tag>
     settings:
       path: dist/ # path to directory to publish files from
       surge_token:
         from_secret: SURGE_TOKEN # install surge cli and run `surge token`: https://surge.sh/help/getting-started-with-surge
-      forge_type: github # or gitea, gitlab, ...
+      forge_type: github # or gitea, gitlab, ... (gitea = forgejo)
       forge_url: https://github.com # or https://codeberg.org, https://gitlab.com, ...
       forge_repo_token:
         from_secret: FORGE_TOKEN # access token for your forge
@@ -51,7 +51,7 @@ docker run --rm -it \
   -v $(pwd):/woodpecker/src \
   -w /woodpecker/src \
   --entrypoint sh \
-  woodpeckerci/plugin-surge-preview:next
+  woodpeckerci/plugin-surge-preview:<tag>
 
 # Inside the container, trigger the app manually:
 plugin-surge-preview
