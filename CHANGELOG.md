@@ -1,6 +1,14 @@
 # Changelog
 
-## [1.3.6](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.6) - 2025-04-05
+## [1.3.6](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.6) - 2025-04-10
+
+### ❤️ Thanks to all contributors! ❤️
+
+@pat-s
+
+### 📚 Documentation
+
+- Update wording in PR comments [[#156](https://github.com/woodpecker-ci/plugin-surge-preview/pull/156)]
 
 ### 📦️ Dependency
 
