@@ -1,3 +1,4 @@
 plugin-surge-preview
 .idea/
 .env
+vendor/
