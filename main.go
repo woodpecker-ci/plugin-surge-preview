@@ -64,8 +64,7 @@ func main() {
 		},
 	}
 
-	ctx := context.Background()
-	if err := app.Run(ctx, os.Args); err != nil {
+	if err := app.Run(context.Background(), os.Args); err != nil {
 		fmt.Println(err)
 		os.Exit(1)
 	}
