@@ -5,6 +5,14 @@
 
 Woodpecker plugin to deploy static websites (for PR previews) to [surge.sh](https://surge.sh/).
 
+## Build
+
+Build the Docker image with the following command:
+
+```sh
+docker buildx build -t woodpeckerci/plugin-surge-preview . --load
+```
+
 ## Usage
 
 Create a Woodpecker pipeline in your project and add a step like this one:
