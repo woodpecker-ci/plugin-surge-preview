@@ -27,7 +27,8 @@ type Plugin struct {
 }
 
 func (p *Plugin) Exec(ctx context.Context) error {
-	fmt.Println("Surge.sh preview plugin")
+	fmt.Println("--- Surge.sh preview plugin ---")
+    fmt.Println()
 
 	if p.RepoName == "" || p.RepoOwner == "" || p.PipelineEvent == "" {
 		return errors.New("Missing required parameters. Are you running this plugin from within a pipeline?")
@@ -38,7 +39,7 @@ func (p *Plugin) Exec(ctx context.Context) error {
 	}
 
 	if p.SurgeToken == "" {
-		return errors.New("Surge.sh token is not defined")
+		return errors.New("Surge.sh token is missing")
 	}
 
 	p.comment = &comment{}
@@ -59,7 +60,7 @@ func (p *Plugin) Exec(ctx context.Context) error {
 	case "pull_request_closed":
 		return p.teardown(ctx)
 	default:
-		return errors.New("unsupported pipeline event, please only run on pull_request or pull_close")
+		return errors.New("unsupported pipeline event, only 'pull_request' and 'pull_request_closed' are supported")
 	}
 }
 
