@@ -25,6 +25,7 @@
 
 ### Misc
 
+- Add Makefile [[#157](https://github.com/woodpecker-ci/plugin-surge-preview/pull/157)]
 - [pre-commit.ci] pre-commit autoupdate [[#144](https://github.com/woodpecker-ci/plugin-surge-preview/pull/144)]
 
 ## [1.3.5](https://github.com/woodpecker-ci/plugin-surge-preview/releases/tag/1.3.5) - 2025-02-18
