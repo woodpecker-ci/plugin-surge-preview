@@ -27,7 +27,8 @@ type Plugin struct {
 }
 
 func (p *Plugin) Exec(ctx context.Context) error {
-	fmt.Println("Surge.sh preview plugin")
+	fmt.Println("--- Surge.sh preview plugin ---")
+	fmt.Println()
 
 	if p.RepoName == "" || p.RepoOwner == "" || p.PipelineEvent == "" {
 		return errors.New("Missing required parameters. Are you running this plugin from within a pipeline?")
@@ -38,7 +39,7 @@ func (p *Plugin) Exec(ctx context.Context) error {
 	}
 
 	if p.SurgeToken == "" {
-		return errors.New("Surge.sh token is not defined")
+		return errors.New("Surge.sh token is missing")
 	}
 
 	p.comment = &comment{}
@@ -59,7 +60,7 @@ func (p *Plugin) Exec(ctx context.Context) error {
 	case "pull_request_closed":
 		return p.teardown(ctx)
 	default:
-		return errors.New("unsupported pipeline event, please only run on pull_request or pull_close")
+		return errors.New("unsupported pipeline event, only 'pull_request' and 'pull_request_closed' are supported")
 	}
 }
 
@@ -83,7 +84,7 @@ func (p *Plugin) deploy(ctx context.Context) error {
 		return err
 	}
 
-	commentText = fmt.Sprintf("Deployment of preview was successful: https://%s", url)
+	commentText = fmt.Sprintf("Surge PR preview deployment succeeded. View it at https://%s", url)
 	fmt.Println(commentText)
 	_, err = p.comment.UpdateOrCreateComment(ctx, repo, p.PullRequestID, comment, commentText)
 	if err != nil {
@@ -102,7 +103,7 @@ func (p *Plugin) teardown(ctx context.Context) error {
 		return err
 	}
 
-	commentText := fmt.Sprintf("Tearing down https://%s\n", url)
+	commentText := fmt.Sprintf("Shutting down https://%s\n", url)
 	fmt.Println(commentText)
 	comment, err = p.comment.UpdateOrCreateComment(ctx, repo, p.PullRequestID, comment, commentText)
 	if err != nil {
@@ -113,7 +114,7 @@ func (p *Plugin) teardown(ctx context.Context) error {
 		return err
 	}
 
-	commentText = "Deployment of preview was torn down"
+	commentText = "Surge PR preview deployment was removed"
 	fmt.Println(commentText)
 	_, err = p.comment.UpdateOrCreateComment(ctx, repo, p.PullRequestID, comment, commentText)
 	if err != nil {
