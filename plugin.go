@@ -83,7 +83,7 @@ func (p *Plugin) deploy(ctx context.Context) error {
 		return err
 	}
 
-	commentText = fmt.Sprintf("Deployment of preview was successful: https://%s", url)
+	commentText = fmt.Sprintf("Surge PR preview deployment succeeded. View it at https://%s", url)
 	fmt.Println(commentText)
 	_, err = p.comment.UpdateOrCreateComment(ctx, repo, p.PullRequestID, comment, commentText)
 	if err != nil {
@@ -102,7 +102,7 @@ func (p *Plugin) teardown(ctx context.Context) error {
 		return err
 	}
 
-	commentText := fmt.Sprintf("Tearing down https://%s\n", url)
+	commentText := fmt.Sprintf("Shutting down https://%s\n", url)
 	fmt.Println(commentText)
 	comment, err = p.comment.UpdateOrCreateComment(ctx, repo, p.PullRequestID, comment, commentText)
 	if err != nil {
@@ -113,7 +113,7 @@ func (p *Plugin) teardown(ctx context.Context) error {
 		return err
 	}
 
-	commentText = "Deployment of preview was torn down"
+	commentText = "Surge PR preview deployment was removed"
 	fmt.Println(commentText)
 	_, err = p.comment.UpdateOrCreateComment(ctx, repo, p.PullRequestID, comment, commentText)
 	if err != nil {
