@@ -8,6 +8,7 @@
 
 ### 📚 Documentation
 
+- Update usage example [[#158](https://github.com/woodpecker-ci/plugin-surge-preview/pull/158)]
 - Update wording in PR comments [[#156](https://github.com/woodpecker-ci/plugin-surge-preview/pull/156)]
 
 ### 📦️ Dependency
