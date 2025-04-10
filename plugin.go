@@ -28,7 +28,7 @@ type Plugin struct {
 
 func (p *Plugin) Exec(ctx context.Context) error {
 	fmt.Println("--- Surge.sh preview plugin ---")
-    fmt.Println()
+	fmt.Println()
 
 	if p.RepoName == "" || p.RepoOwner == "" || p.PipelineEvent == "" {
 		return errors.New("Missing required parameters. Are you running this plugin from within a pipeline?")
