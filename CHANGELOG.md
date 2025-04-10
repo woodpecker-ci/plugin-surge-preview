@@ -12,6 +12,7 @@
 
 ### 📦️ Dependency
 
+- fix(deps): update module github.com/urfave/cli/v2 to v3 [[#155](https://github.com/woodpecker-ci/plugin-surge-preview/pull/155)]
 - fix(deps): update module github.com/jenkins-x/go-scm to v1.14.57 [[#154](https://github.com/woodpecker-ci/plugin-surge-preview/pull/154)]
 - chore(deps): update dependency go to v1.24.2 [[#153](https://github.com/woodpecker-ci/plugin-surge-preview/pull/153)]
 - chore(deps): update pre-commit hook golangci/golangci-lint to v2 [[#152](https://github.com/woodpecker-ci/plugin-surge-preview/pull/152)]
