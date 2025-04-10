@@ -1,5 +1,5 @@
-TARGETOS ?= linux
-TARGETARCH ?= amd64
+TARGETOS ?= $(shell go env GOOS)
+TARGETARCH ?= $(shell go env GOARCH)
 LDFLAGS := -s -w -extldflags "-static"
 
 .PHONY: install-tools
